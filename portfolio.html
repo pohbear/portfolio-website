@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<head lang="en-us">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Portfolio - Kenneth Poh's Portfolio</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+    <link href="css/all.min.css" rel="stylesheet" type="text/css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/default.js"></script>
+    <script>
+        $(document).ready(function () {
+            var filtered = false;
+            $(".portfolio-filter").click(function() {
+                if($(this).hasClass("selected")) {
+                    $(".portfolio-filter").removeClass("selected");
+                    filtered = false;
+                } else {
+                    $(".portfolio-filter").removeClass("selected");
+                    $(this).addClass("selected");
+                    filtered = true;
+                }
+
+                // if(filtered) {
+                //     var filter = $(this).html();
+                //     if(filter === "Category 1") {
+                //         $(".cat2-content").fadeOut(300);
+                //         $(".cat3-content").fadeOut(300);
+                //         $(".cat1-content").fadeIn(300);
+                //     } else if (filter === "Category 2") {
+                //         $(".cat1-content").fadeOut(300);
+                //         $(".cat3-content").fadeOut(300);
+                //         $(".cat2-content").fadeIn(300);
+                //     } else if (filter === "Category 3") {
+                //         $(".cat1-content").fadeOut(300);
+                //         $(".cat2-content").fadeOut(300);
+                //         $(".cat3-content").fadeIn(300);
+                //     } else {
+                //         $(".filter-content").html("Error!");
+                //     }
+                // } else {
+                //     $(".cat1-content").fadeIn(300);
+                //     $(".cat2-content").fadeIn(300);
+                //     $(".cat3-content").fadeIn(300);
+                // }
+
+                if(filtered) {
+                    var filter = $(this).html();
+                    if(filter === "Category 1") {
+                        $(".cat2-content").hide(500);
+                        $(".cat3-content").hide(500);
+                        $(".cat1-content").show(500);
+                    } else if (filter === "Category 2") {
+                        $(".cat1-content").hide(500);
+                        $(".cat3-content").hide(500);
+                        $(".cat2-content").show(500);
+                    } else if (filter === "Category 3") {
+                        $(".cat1-content").hide(500);
+                        $(".cat2-content").hide(500);
+                        $(".cat3-content").show(500);
+                    } else {
+                        $(".filter-content").html("Error!");
+                    }
+                } else {
+                    $(".cat1-content").show(500);
+                    $(".cat2-content").show(500);
+                    $(".cat3-content").show(500);
+                }
+            });
+        });
+      </script>
+</head>
+<body>
+    <div class="body-content hidden">
+        <nav>
+            <div class="flex-nav">
+                <a href="index.html">
+                    <svg class="nav-logo" id="Group_4" data-name="Group 4" xmlns="http://www.w3.org/2000/svg" width="328.06" height="292.011" viewBox="0 0 328.06 292.011">
+                        <g id="Polygon_53" data-name="Polygon 53" transform="matrix(0.017, -1, 1, 0.017, 0, 79.116)" fill="#663b00">
+                            <path d="M 75.07308959960938 32.4119987487793 L 4.05489444732666 32.4119987487793 L 39.56399154663086 1.975619912147522 L 75.07308959960938 32.4119987487793 Z" stroke="none"/>
+                            <path d="M 39.56399154663086 3.951236724853516 L 8.109779357910156 30.91199684143066 L 71.01820373535156 30.91199684143066 L 39.56399154663086 3.951236724853516 M 39.56399154663086 -3.814697265625e-06 L 79.12797546386719 33.9119987487793 L 7.62939453125e-06 33.9119987487793 L 39.56399154663086 -3.814697265625e-06 Z" stroke="none" fill="#111"/>
+                        </g>
+                        <g id="Polygon_54" data-name="Polygon 54" transform="matrix(-0.914, -0.407, 0.407, -0.914, 64.003, 92.298)" fill="#9a5800">
+                            <path d="M 59.36746597290039 72.09674835205078 L 2.254111051559448 72.09674835205078 L 30.81078910827637 3.884319543838501 L 59.36746597290039 72.09674835205078 Z" stroke="none"/>
+                            <path d="M 30.81078910827637 7.768623352050781 L 4.508213043212891 70.59674835205078 L 57.11336517333984 70.59674835205078 L 30.81078910827637 7.768623352050781 M 30.81078910827637 0 L 61.62157821655273 73.59674835205078 L 0 73.59674835205078 L 30.81078910827637 0 Z" stroke="none" fill="#111"/>
+                        </g>
+                        <g id="Path_29" data-name="Path 29" transform="translate(7.734 88.539)" fill="#663b00">
+                            <path d="M 54.05258560180664 88.93197631835938 L 3.345699071884155 88.93197631835938 L 25.88380241394043 5.179612159729004 L 54.05258560180664 88.93197631835938 Z" stroke="none"/>
+                            <path d="M 26.04329681396484 10.35921478271484 L 5.302715301513672 87.43197631835938 L 51.96550369262695 87.43197631835938 L 26.04329681396484 10.35921478271484 M 25.72427558898926 -7.62939453125e-06 L 56.1396484375 90.43197631835938 L 1.388675689697266 90.43197631835938 L 25.72427558898926 -7.62939453125e-06 Z" stroke="none" fill="#111"/>
+                        </g>
+                        <g id="Path_21" data-name="Path 21" transform="translate(15.51 186.731)" fill="#663b00">
+                            <path d="M 141.7891693115234 102.373420715332 L 75.49028015136719 82.49833679199219 L -0.6420386433601379 -3.724897384643555 L 50.83188247680664 -3.618361949920654 L 141.7891693115234 102.373420715332 Z" stroke="none"/>
+                            <path d="M 2.689544677734375 -2.218009948730469 L 76.33123779296875 81.18449401855469 L 137.3186950683594 99.46730804443359 L 50.14130401611328 -2.119789123535156 L 2.689544677734375 -2.218009948730469 M -3.973648071289062 -5.2318115234375 L 51.52248382568359 -5.116943359375 L 146.2596740722656 105.2795333862305 L 74.64930725097656 83.81218719482422 L -3.973648071289062 -5.2318115234375 Z" stroke="none" fill="#111"/>
+                        </g>
+                        <g id="Path_28" data-name="Path 28" transform="translate(228.137 73.048) rotate(180)" fill="#663b00">
+                            <path d="M 125.3200454711914 45.1806526184082 L 4.644115447998047 45.1806526184082 L 64.72844696044922 1.846771121025085 L 125.3200454711914 45.1806526184082 Z" stroke="none"/>
+                            <path d="M 64.73213195800781 3.693534851074219 L 9.288223266601562 43.68064498901367 L 120.6441268920898 43.68064498901367 L 64.73213195800781 3.693534851074219 M 64.72477722167969 7.62939453125e-06 L 129.9959869384766 46.68064498901367 L 0 46.68064498901367 L 64.72477722167969 7.62939453125e-06 Z" stroke="none" fill="#111"/>
+                        </g>
+                        <g id="Path_23" data-name="Path 23" transform="translate(51.931 31.045)" fill="#9a5800">
+                            <path d="M 62.17052841186523 196.8103637695312 L 16.29057502746582 147.6522369384766 L -16.32972526550293 53.49727249145508 L 44.08406448364258 -3.229685544967651 L 109.7075042724609 44.85847854614258 L 109.7075042724609 89.65720367431641 L 62.85631942749023 119.9379119873047 L 62.17052841186523 120.3811492919922 L 62.17052841186523 121.1977005004883 L 62.17052841186523 196.8103637695312 Z" stroke="none"/>
+                            <path d="M 44.20249938964844 -1.283279418945312 L -14.59405517578125 53.92507934570312 L 17.60391235351562 146.8609924316406 L 60.67052841186523 193.0047760009766 L 60.67052841186523 119.564582824707 L 108.2074737548828 88.84065246582031 L 108.2074737548828 45.61891174316406 L 44.20249938964844 -1.283279418945312 M 43.96564102172852 -5.17608642578125 L 111.2074737548828 44.09805297851562 L 111.2074737548828 90.47374725341797 L 63.6705322265625 121.1976928710938 L 63.6705322265625 200.615966796875 L 14.97722625732422 148.4434661865234 L -18.06544494628906 53.06941223144531 L 43.96564102172852 -5.17608642578125 Z" stroke="none" fill="#111"/>
+                        </g>
+                        <g id="Path_24" data-name="Path 24" transform="translate(181.566 31.045)" fill="#9a5800">
+                            <path d="M 30.97152900695801 196.8103637695312 L 30.97152900695801 121.1977005004883 L 30.97152900695801 120.3811492919922 L 30.28573989868164 119.9379119873047 L -16.5654182434082 89.65720367431641 L -16.5654182434082 44.85847854614258 L 49.05796813964844 -3.229685544967651 L 109.471809387207 53.49727249145508 L 76.85148620605469 147.6522369384766 L 30.97152900695801 196.8103637695312 Z" stroke="none"/>
+                            <path d="M 48.93955612182617 -1.283279418945312 L -15.06544494628906 45.61891174316406 L -15.06544494628906 88.84065246582031 L 32.47153091430664 119.564582824707 L 32.47153091430664 193.0047760009766 L 75.53814697265625 146.8609924316406 L 107.736083984375 53.92507934570312 L 48.93955612182617 -1.283279418945312 M 49.17641830444336 -5.17608642578125 L 111.2074737548828 53.06941223144531 L 78.16483306884766 148.4434661865234 L 29.47153091430664 200.615966796875 L 29.47153091430664 121.1976928710938 L -18.06544494628906 90.47374725341797 L -18.06544494628906 44.09805297851562 L 49.17641830444336 -5.17608642578125 Z" stroke="none" fill="#111"/>
+                        </g>
+                        <g id="Path_25" data-name="Path 25" transform="translate(127.529 132.169)" fill="#663b00">
+                            <path d="M 80.55620574951172 95.16668701171875 L -8.617191314697266 95.16668701171875 L -8.617191314697266 22.14103507995605 L 35.68603515625 -5.336898803710938 L 80.55620574951172 22.14653205871582 L 80.55620574951172 95.16668701171875 Z" stroke="none"/>
+                            <path d="M 35.69096374511719 -3.57489013671875 L -7.1171875 22.97578430175781 L -7.1171875 93.66667175292969 L 79.05620574951172 93.66667175292969 L 79.05620574951172 22.98677825927734 L 35.69096374511719 -3.57489013671875 M 35.68111038208008 -7.098945617675781 L 82.05621337890625 21.30628967285156 L 82.05621337890625 96.66667175292969 L -10.1171875 96.66667175292969 L -10.1171875 21.30628967285156 L 35.68111038208008 -7.098945617675781 Z" stroke="none" fill="#111"/>
+                        </g>
+                        <g id="Polygon_56" data-name="Polygon 56" transform="translate(82.427 91.81)" fill="#111">
+                            <path d="M 46.29366683959961 26.75999641418457 L 3.312299013137817 26.75999641418457 L 24.80298233032227 2.273959159851074 L 46.29366683959961 26.75999641418457 Z" stroke="none"/>
+                            <path d="M 24.80298233032227 4.547920227050781 L 6.624595642089844 25.2599983215332 L 42.98136901855469 25.2599983215332 L 24.80298233032227 4.547920227050781 M 24.80298233032227 -1.9073486328125e-06 L 49.60596084594727 28.25999641418457 L 3.814697265625e-06 28.25999641418457 L 24.80298233032227 -1.9073486328125e-06 Z" stroke="none" fill="#111"/>
+                        </g>
+                        <g id="Polygon_60" data-name="Polygon 60" transform="translate(194.964 91.81)" fill="#111">
+                            <path d="M 46.29366683959961 26.75999641418457 L 3.312299013137817 26.75999641418457 L 24.80298233032227 2.273959159851074 L 46.29366683959961 26.75999641418457 Z" stroke="none"/>
+                            <path d="M 24.80298233032227 4.547920227050781 L 6.624595642089844 25.2599983215332 L 42.98136901855469 25.2599983215332 L 24.80298233032227 4.547920227050781 M 24.80298233032227 -1.9073486328125e-06 L 49.60596084594727 28.25999641418457 L 3.814697265625e-06 28.25999641418457 L 24.80298233032227 -1.9073486328125e-06 Z" stroke="none" fill="#111"/>
+                        </g>
+                        <g id="Path_26" data-name="Path 26" transform="translate(143.958 172.326)" fill="#111">
+                            <path d="M 19.45709037780762 35.95685195922852 L 0.6777324676513672 25.76271820068359 L 0.6777324676513672 6.126768112182617 L 37.68053436279297 6.126768112182617 L 37.68053436279297 25.77505111694336 L 19.45709037780762 35.95685195922852 Z" stroke="none"/>
+                            <path d="M 19.44664573669434 34.24443054199219 L 36.18053436279297 24.89487457275391 L 36.18053436279297 7.626768112182617 L 2.177732467651367 7.626768112182617 L 2.177732467651367 24.87022399902344 L 19.44664573669434 34.24443054199219 M 19.46752166748047 37.66926956176758 L -0.8222675323486328 26.65521812438965 L -0.8222675323486328 4.626768112182617 L 39.18053436279297 4.626768112182617 L 39.18053436279297 26.65521812438965 L 19.46752166748047 37.66926956176758 Z" stroke="none" fill="#111"/>
+                        </g>
+                        <g id="Polygon_62" data-name="Polygon 62" transform="translate(208.355 292.011) rotate(180)" fill="#9a5800">
+                            <path d="M 87.40335083007812 57.84599304199219 L 3.028626680374146 57.84599304199219 L 45.21598815917969 2.475077152252197 L 87.40335083007812 57.84599304199219 Z" stroke="none"/>
+                            <path d="M 45.21598815917969 4.950141906738281 L 6.057258605957031 56.34597778320312 L 84.37471771240234 56.34597778320312 L 45.21598815917969 4.950141906738281 M 45.21598815917969 -7.62939453125e-06 L 90.43197631835938 59.34597778320312 L 0 59.34597778320312 L 45.21598815917969 -7.62939453125e-06 Z" stroke="none" fill="#111"/>
+                        </g>
+                        <g id="Polygon_63" data-name="Polygon 63" transform="matrix(0.017, 1, -1, 0.017, 326.679, 0)" fill="#663b00">
+                            <path d="M 75.07311248779297 32.41207122802734 L 4.054885864257812 32.41207122802734 L 39.56399917602539 1.975628018379211 L 75.07311248779297 32.41207122802734 Z" stroke="none"/>
+                            <path d="M 39.56399917602539 3.951231002807617 L 8.109748840332031 30.91207504272461 L 71.01824951171875 30.91207504272461 L 39.56399917602539 3.951231002807617 M 39.56399917602539 0 L 79.12799835205078 33.91207504272461 L 0 33.91207504272461 L 39.56399917602539 0 Z" stroke="none" fill="#111"/>
+                        </g>
+                        <g id="Polygon_64" data-name="Polygon 64" transform="translate(320.018 67.234) rotate(156)" fill="#9a5800">
+                            <path d="M 59.36753463745117 72.09673309326172 L 2.254115104675293 72.09673309326172 L 30.81082534790039 3.884318590164185 L 59.36753463745117 72.09673309326172 Z" stroke="none"/>
+                            <path d="M 30.81082534790039 7.76861572265625 L 4.508216857910156 70.59673309326172 L 57.11343383789062 70.59673309326172 L 30.81082534790039 7.76861572265625 M 30.81082534790039 0 L 61.62165069580078 73.59673309326172 L 0 73.59673309326172 L 30.81082534790039 0 Z" stroke="none" fill="#111"/>
+                        </g>
+                        <g id="Path_30" data-name="Path 30" transform="translate(261.508 88.539)" fill="#663b00">
+                            <path d="M 54.18262481689453 88.93197631835938 L 3.4757399559021 88.93197631835938 L 31.64452171325684 5.179612159729004 L 54.18262481689453 88.93197631835938 Z" stroke="none"/>
+                            <path d="M 31.48502731323242 10.35921478271484 L 5.562820434570312 87.43197631835938 L 52.22560882568359 87.43197631835938 L 31.48502731323242 10.35921478271484 M 31.80404853820801 -7.62939453125e-06 L 56.1396484375 90.43197631835938 L 1.388675689697266 90.43197631835938 L 31.80404853820801 -7.62939453125e-06 Z" stroke="none" fill="#111"/>
+                        </g>
+                        <g id="Path_31" data-name="Path 31" transform="translate(168.526 186.731)" fill="#663b00">
+                            <path d="M 0.496882826089859 102.373420715332 L 91.45419311523438 -3.618361949920654 L 142.9281005859375 -3.724897384643555 L 66.7957763671875 82.49833679199219 L 0.496882826089859 102.373420715332 Z" stroke="none"/>
+                            <path d="M 139.5964965820312 -2.218009948730469 L 92.144775390625 -2.119789123535156 L 4.96734619140625 99.46730804443359 L 65.95481872558594 81.18449401855469 L 139.5964965820312 -2.218009948730469 M 146.2596740722656 -5.2318115234375 L 67.63674926757812 83.81218719482422 L -3.973648071289062 105.2795333862305 L 90.76359558105469 -5.116943359375 L 146.2596740722656 -5.2318115234375 Z" stroke="none" fill="#111"/>
+                        </g>
+                        </svg>
+                </a>
+                <div class="flex-navlinks">
+                    <a href="index.html" class="nav-link nav-home responsive-hide">HOME</a>
+                    <a href="portfolio.html" class="nav-link nav-portfolio">PORTFOLIO</a>
+                    <a href="about.html" class="nav-link nav-about">ABOUT</a>
+                    <a href="contact.html" class="nav-link nav-contact">CONTACT</a>
+                </div>
+            </div>
+        </nav>
+        <header>
+            <div class="header flex-column flex-center responsive">
+                <p class="text-xlarge">PORTFOLIO</p>
+            </div>
+        </header>
+        <main>
+            <section id="portfolio-main" class="main flex-column">
+                <div class="section-header responsive">
+                    <p class="text-header">My works!</p>
+                </div>
+                <div class="flex-row">
+                    <p class="text-medium">
+                        These are the works that I have completed, all for your viewing. 
+                        You can click on them to find out more about each piece of work!
+                    </p>
+                </div>
+                <div class="spacer-large"></div>
+                <div class="flex-column">
+                    <div class="flex-row">
+                        <p class="text-medium">Category Filter</p>
+                    </div>
+                    <div class="spacer"></div>
+                    <div class="flex-row">
+                        <a><p class="text-small portfolio-filter">Category 1</p></a>
+                        <a><p class="text-small portfolio-filter">Category 2</p></a>
+                        <a><p class="text-small portfolio-filter">Category 3</p></a>
+                    </div>
+                    <div class="flex-row flex-around filter-content">
+                        <article class="portfolio-content">
+                            <a>
+                                <div class="cat1-content">
+                                    <div class="flex-row flex-center">
+                                        <img class="portfolio-content-image" src="images/wata.png">
+                                    </div>
+                                    <div class="flex-column flex-start">
+                                        <p class="text-medium">Item Name</p>
+                                        <p class="text-small">Category 1</p>
+                                        <p class="text-small">Info Here</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="portfolio-content">
+                            <div class="cat2-content">
+                                <div class="flex-row flex-center">
+                                    <img class="portfolio-content-image" src="images/pohbear_logo.png">
+                                </div>
+                                <div class="flex-column flex-start">
+                                    <p class="text-medium">Item Name</p>
+                                    <p class="text-small">Category 2</p>
+                                    <p class="text-small">Info Here</p>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <div class="portfolio-content cat3-content">
+                            <div class="flex-row flex-center">
+                                <img class="portfolio-content-image" src="images/module_tracker.PNG">
+                            </div>
+                            <div class="flex-column flex-start">
+                                <p class="text-medium">Item Name</p>
+                                <p class="text-small">Category 3</p>
+                                <p class="text-small">Info Here</p>
+                            </div>
+                        </div>
+                        <div class="portfolio-content cat3-content">
+                            <div class="flex-row flex-center">
+                                <img class="portfolio-content-image" src="images/module_tracker.PNG">
+                            </div>
+                            <div class="flex-column flex-start">
+                                <p class="text-medium">Item Name</p>
+                                <p class="text-small">Category 3</p>
+                                <p class="text-small">Info Here</p>
+                            </div>
+                        </div>
+                        <div class="portfolio-content cat1-content">
+                            <div class="flex-row flex-center">
+                                <img class="portfolio-content-image" src="images/wata.png">
+                            </div>
+                            <div class="flex-column flex-start">
+                                <p class="text-medium">Item Name</p>
+                                <p class="text-small">Category 1</p>
+                                <p class="text-small">Info Here</p>
+                            </div>
+                        </div>
+                        <div class="portfolio-content cat2-content">
+                            <div class="flex-row flex-center">
+                                <img class="portfolio-content-image" src="images/pohbear_logo.png">
+                            </div>
+                            <div class="flex-column flex-start">
+                                <p class="text-medium">Item Name</p>
+                                <p class="text-small">Category 2</p>
+                                <p class="text-small">Info Here</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="flex-column flex-center footer-text responsive">
+              <p class="text-small">© 2021 Kenneth Poh</p>
+              <div class="flex-row flex-center footer-div">
+                <a href="https://www.facebook.com/kenneth.p.kang" target="_blank">
+                  <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f fa-w-10 footer-icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
+                </a>
+                <a href="https://www.instagram.com/kennethpohbear/" target="_blank">
+                  <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="svg-inline--fa fa-instagram fa-w-14 footer-icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/kennethpohbear/" target="_blank">
+                  <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" class="svg-inline--fa fa-linkedin-in fa-w-14 footer-icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
+                </a>
+                <a href="https://github.com/RPKennethPoh" target="_blank">
+                  <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github fa-w-16 footer-icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+                </a>
+              </div>
+            </div>
+          </footer>
+    </div>
+    <div class="cursor"></div>
+</body>
