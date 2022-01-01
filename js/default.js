@@ -7,18 +7,24 @@ $(document).ready(function () {
       but window because that's what is used to call the function setTimeout
       */
       var nav = $(this);
+      var goto = nav.attr("href");
+      console.log(nav);
+      console.log(goto);
       e.preventDefault();
       $(".body-content").fadeOut(300);
       setTimeout(function () {
-        if (nav.hasClass("nav-portfolio")) {
-          window.location.href = "portfolio.html";
-        } else if (nav.hasClass("nav-about")) {
-          window.location.href = "about.html";
-        } else if (nav.hasClass("nav-contact")) {
-          window.location.href = "contact.html";
-        } else if (nav.hasClass("nav-home")) {
-          window.location.href = "index.html";
-        }
+          window.location.href = goto;
+        // if (nav.hasClass("nav-portfolio")) {
+        //   window.location.href = "portfolio.html";
+        // } else if (nav.hasClass("nav-about")) {
+        //   window.location.href = "about.html";
+        // } else if (nav.hasClass("nav-contact")) {
+        //   window.location.href = "contact.html";
+        // } else if (nav.hasClass("nav-home")) {
+        //   window.location.href = "index.html";
+        // } else {
+        //     window.location.href = goto;
+        // }
       }, 600);
     });
     var cursor = $(".cursor");

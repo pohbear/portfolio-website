@@ -419,13 +419,16 @@ img.about-img {
 .filter-content {
     width: 100%;
 }
-.portfolio-content a {
+.portfolio-content {
     width: 30%;
     height: 23vw;
     background:rgba(0, 0, 0, 0.3);
     margin-top:1vw;
     margin-bottom:1vw;
     border-radius:10px;
+}
+.portfolio-content a {
+   
     color:whitesmoke;
     text-decoration:none;
     transition: all 0.5s ease;
@@ -438,7 +441,6 @@ img.about-img {
     border-radius: 10px 10px 0px 0px;
     margin-bottom:0.5vw;
 }
-
 
 /* Responsive */
 @media only screen and (max-width: 1200px) {
@@ -580,5 +582,12 @@ img.about-img {
     }
     .input-full {
         margin-bottom:2vw;
+    }
+    .portfolio-content {
+        width: 45%;
+        height: 50vw;
+    }
+    .cursor {
+        display:none;
     }
 }
