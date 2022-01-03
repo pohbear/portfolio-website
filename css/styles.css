@@ -480,15 +480,18 @@ img.about-img {
         margin-bottom: 5vw;
     }
     .nav-link {
-        font-size:2vw;
+        font-size:3vw;
         padding:3vw;
         color:whitesmoke;
         text-decoration:none;
         transition: all 0.5s ease;
     }
+    .flex-navlinks {
+        width: 80%;
+    }
     svg.nav-logo {
-        width:5vw;
-        height:5vw;
+        width:8vw;
+        height:8vw;
         margin:1vw 2vw;
     }
     svg.main-logo {
