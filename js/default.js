@@ -171,18 +171,18 @@ $(document).ready(function () {
                 '<div class="spacer"></div>' + 
                 '<div class="flex-row flex-between">' +
                 '<div class="portfolio-info-block">' + 
-                '<img class="portfolio-info-image" src="images/penumbra/penumbra_room_1.png"/>' + 
+                '<img class="portfolio-info-image" src="images/penumbra/penumbra_room_1.PNG"/>' + 
                 '<p class="text-small text-light text-center">Penumbra: Room 1</p></div>' + 
                 '<div class="portfolio-info-block">' + 
-                '<img class="portfolio-info-image" src="images/penumbra/penumbra_room_2.png"/>' + 
+                '<img class="portfolio-info-image" src="images/penumbra/penumbra_room_2.PNG"/>' + 
                 '<p class="text-small text-light text-center">Penumbra: Room 2</p></div></div>' + 
                 '<div class="spacer"></div>' + 
                 '<div class="flex-row flex-between">' +
                 '<div class="portfolio-info-block">' + 
-                '<img class="portfolio-info-image" src="images/penumbra/penumbra_room_3.png"/>' + 
+                '<img class="portfolio-info-image" src="images/penumbra/penumbra_room_3.PNG"/>' + 
                 '<p class="text-small text-light text-center">Penumbra: Room 3</p></div>' + 
                 '<div class="portfolio-info-block">' + 
-                '<img class="portfolio-info-image" src="images/penumbra/penumbra_room_4.png"/>' + 
+                '<img class="portfolio-info-image" src="images/penumbra/penumbra_room_4.PNG"/>' + 
                 '<p class="text-small text-light text-center">Penumbra: Corridor</p></div></div>' + 
                 '<div class="spacer-large"></div>' + 
                 '<p class="text-large">Gameplay Loop</p>' + 
