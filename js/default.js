@@ -126,12 +126,12 @@ $(document).ready(function () {
                 '<img id="portfolio-info-main-image" src="images/penumbra/penumbra_title_logo.png" alt="Penumbra Title and Logo"/></div>' + 
                 '</div>' + 
                 '<div class="spacer-large"></div>' + 
-                '<div id="portfolio-info-writeup" class="flex-column">' + 
+                '<div id="portfolio-info-writeup" class="flex-column flex-between responsive">' + 
                 '<p class="text-large">Introduction</p>' + 
                 '<p class="text-medium">Penumbra is a single player Virtual Reality escape room game that incorporates puzzles and problem-solving. ' + 
                 'It was created in Unity. This was my first exposure to the Unity development platform, and game development as a whole.</p>' + 
                 '<div class="spacer-large"></div>' + 
-                '<p class="text-large">Ideation</p>' + 
+                '<p class="text-large">Design</p>' + 
                 '<p class="text-medium">When I was trying to come up with ideas and themes for an escape room, I tried to think what would interest me. ' + 
                 'From there, I picked elements that I felt would fit well with a VR escape room. I ended up with three major points to revolve my escape room around: </p>' + 
                 '<div class="spacer"></div>' + 
@@ -139,14 +139,9 @@ $(document).ready(function () {
                 '<li>Try to avoid direct hand-holding to make the experience more immersive. The players should feel like they are trying to escape, instead of following steps or instructions</li>' + 
                 '<li>Variety in terms of the puzzles to keep the escape room entertaining. I felt it would be boring if the puzzles all had the same mechanics or follow a certain sequence</li></ul>' + 
                 '<div class="spacer"></div>' + 
-                '<p class="text-medium">For references, I looked to games that I have played which had puzzle-solving and was story-driven. A few of the titles were Portal, We Were Here, and The Room. ' + 
-                'I also tried to incorporate elements from escape rooms that I have been to before.</p>' + 
+                '<p class="text-medium">I decided on "Dystopian 18th Century Steampunk England" as the design theme for my escape room.</p> ' + 
                 '<div class="spacer"></div>' + 
-                '<p class="text-medium">With all that, my final idea was an escape room game set to take place in a dystopian 18th Century England with steampunk elements. ' + 
-                'The setting is that the player was born within the less fortunate underbelly of society. Tired of living in the shadows, they join an organization with the goal of undermining the corrupt. ' + 
-                'The player is then tasked to break into the base of a trader known to work with pirates. However, they find themself locked within the base and must escape before anyone finds out.</p>' + 
-                '<div class="spacer"></div>' + 
-                '<p class="text-medium">From there, I moved on to the design ideation. My initial idea was for it to be a one-room design, where the puzzles would be located in different parts of the room.</p>' + 
+                '<p class="text-medium">My initial idea was for it to be a one-room design, where the puzzles would be located in different parts of the room.</p>' + 
                 '<div class="spacer"></div>' + 
                 '<img class="portfolio-info-image" src="images/penumbra/penumbra_interior_concept_1.png"/>' + 
                 '<p class="text-small text-light text-center">Initial concept sketch of the room interior</p>' + 
@@ -214,7 +209,7 @@ $(document).ready(function () {
                 '<div class="spacer-large"></div>' + 
                 '<p class="text-large">Gameplay Footage</p>' + 
                 '<div class="spacer-large"></div>' + 
-                '<video width="960" height="540" controls><source src="images/penumbra/penumbra_gameplay_compress.mp4" type="video/mp4"/></video>' + 
+                '<video width="960" height="540" controls><source src="images/penumbra/penumbra_gameplay_compressed_default.mp4" type="video/mp4" playinline/></video>' + 
                 '<div class="spacer-large"></div>' + 
                 '<p class="text-large">Final Thoughts</p>' + 
                 '<p class="text-medium">Through this project, a few key takeaways for me would be: </p>' + 
@@ -245,7 +240,7 @@ $(document).ready(function () {
                 '<img id="portfolio-info-main-image" src="images/reptrack/reptrack_title_logo.png" alt="RepTrack Title and Logo"/></div>' + 
                 '</div>' + 
                 '<div class="spacer-large"></div>' + 
-                '<div id="portfolio-info-writeup" class="flex-column">' + 
+                '<div id="portfolio-info-writeup"  class="flex-column flex-between responsive">' + 
                 '<p class="text-large">Introduction</p>' + 
                 '<p class="text-medium">RepTrack is a fitness tracking app that utilizes AI and Computer Vision to scan gym equipment and teach users how to use them. ' + 
                 'It was created by my team as our submission for a Special Projects module. </p>' + 
@@ -258,15 +253,27 @@ $(document).ready(function () {
                 'There were cases where other gym-goers had to let me know that I had bad form, and I would injure myself if I kept going at it. ' + 
                 'The catalyst for this whole idea was a conversation I had with my friend a week before, where he had an injury scare from working out.</p>' + 
                 '<div class="spacer"></div>' + 
-                '<p class="text-medium">From there, we were wondering "Is there any way we can help others in a similar scenario?" ' +  
-                'We did some research and found many apps that taught users how to use different equipment for various exercises, ' + 
+                '<p class="text-medium">We did some research and found many apps that taught users how to use different equipment for various exercises, ' +  
                 'but all of them required the user to have basic knowledge on gym equipment and muscle groups. ' + 
                 'We realised that none of them were completely beginner friendly, and we wanted to fill in that gap. ' + 
-                'As part of our modules, we recently happened to learn about Artificial Intelligence and Machine Learning, with Computer Vision being a part of it. ' + 
-                'From there, we were thinking whether we could implement some form of AI to fill the gap, and how we could go about doing it.</p></div>' + 
+                'As part of our modules, we recently learned some (very) basic Artificial Intelligence and Machine Learning theory. ' + 
+                'We decided on the idea of allowing an individual to use the camera on their smart phone, scan a piece of gym equipment, ' + 
+                'and our computer vision model would help to detect the equipment, and provide the necessary information for a beginner to start working out.</p></div>' + 
                 '<div class="portfolio-info-block-small">' + 
                 '<img class="portfolio-info-image" src="images/reptrack/reptrack_ideation_convo.png"/>' + 
                 '<p class="text-small text-light text-center">Gotta take care of the family jewels</p></div></div>' + 
+                '<div class="spacer-large"></div>' + 
+                '<p class="text-large">Development</p>' + 
+                '<p class="text-medium">For development of the app, we used Android Studio, as we used it before in a mobile app development module. ' + 
+                'While it was familiar to us, we wanted to learn something new too, so each of us had a focus domain when it came to the app creation. More on that in a little bit.</p>' + 
+                '<div class="spacer"></div>' + 
+                '<p class="text-medium">For our computer vision model, we found about Teachable Machine from Google, ' + 
+                'a tool we can use to create an image-based machine learning model. ' + 
+                'We each picked a piece of gym equipment, and then sourced for at least 50 images to train our model with. ' + 
+                'We ended up with a simple model that could detect 3 different pieces of gym equipment: A lat pulldown machine, a leg press, or a treadmill.</p>' + 
+                '<div class="spacer"></div>' + 
+                '<img class="portfolio-info-image" src="images/reptrack/reptrack_model_test.png"/>' + 
+                '<p class="text-small text-light text-center">Model detecting lat pulldown machine</p></div>' + 
                 '</div>'
                 break;
             case "c1-clicksociety":
@@ -280,9 +287,12 @@ $(document).ready(function () {
                 '<p id="portfolio-info-language" class="text-large">Framework: WooCommerce</p>' + 
                 '<div class="spacer-large"></div>' + 
                 '<p id="portfolio-info-date" class="text-large">Completion Date: Feb 2022</p></div>' + 
-                '<div class="portfolio-info-block-logo">' +  
+                '<div class="portfolio-info-block-logo flex-row flex-center text-center">' +  
                 '<img id="portfolio-info-main-image" src="images/clicksociety/clicksociety_title_logo.png" alt="The Click Society Title and Logo"/></div>' + 
-                '<p class="text-large text-light text-center">To be updated.</p>' + 
+                '</div>' + 
+                '<div class="spacer-large"></div>' + 
+                '<div id="portfolio-info-writeup" class="flex-column flex-between responsive">' + 
+                '<p class="text-large text-light text-center">Write-up to be updated.</p> ' + 
                 '</div>'
                 break;
             case "c1-quizzy":
@@ -298,7 +308,10 @@ $(document).ready(function () {
                 '<p id="portfolio-info-date" class="text-large">Completion Date: Jan 2022</p></div>' + 
                 '<div class="portfolio-info-block-logo">' +  
                 '<img id="portfolio-info-main-image" src="images/quizzy/quizzy_title_logo.png" alt="Quizzy Title and Logo"/></div>' + 
-                '<p class="text-large text-light text-center">To be updated.</p>' + 
+                '</div>' + 
+                '<div class="spacer-large"></div>' + 
+                '<div id="portfolio-info-writeup" class="flex-column flex-between responsive">' + 
+                '<p class="text-large text-light text-center">Write-up to be updated.</p> ' + 
                 '</div>'
                 break;
             case "c2-portfolioapp":
@@ -312,7 +325,10 @@ $(document).ready(function () {
                 '<p id="portfolio-info-date" class="text-large">Completion Date: Aug 2021</p></div>' + 
                 '<div class="portfolio-info-block-logo">' +  
                 '<img id="portfolio-info-main-image" src="images/portfolioapp/portfolioapp_title_logo.png" alt="Portfolio App Title and Logo"/></div>' + 
-                '<p class="text-large text-light text-center">To be updated.</p>' + 
+                '</div>' + 
+                '<div class="spacer-large"></div>' + 
+                '<div id="portfolio-info-writeup" class="flex-column flex-between responsive">' + 
+                '<p class="text-large text-light text-center">Write-up to be updated.</p> ' + 
                 '</div>'
                 break;
             case "c1-cagapp":
@@ -328,7 +344,10 @@ $(document).ready(function () {
                 '<p id="portfolio-info-date" class="text-large">Completion Date: Aug 2021</p></div>' + 
                 '<div class="portfolio-info-block-logo">' +  
                 '<img id="portfolio-info-main-image" src="images/cagapp/cagapp_title_logo.png" alt="CAG App Title and Logo"/></div>' + 
-                '<p class="text-large text-light text-center">To be updated.</p>' + 
+                '</div>' + 
+                '<div class="spacer-large"></div>' + 
+                '<div id="portfolio-info-writeup" class="flex-column flex-between responsive">' + 
+                '<p class="text-large text-light text-center">Write-up to be updated.</p> ' + 
                 '</div>'
                 break;
             case "c2-mindsapp":
@@ -342,7 +361,10 @@ $(document).ready(function () {
                 '<p id="portfolio-info-date" class="text-large">Completion Date: Jul 2021</p></div>' + 
                 '<div class="portfolio-info-block-logo">' +  
                 '<img id="portfolio-info-main-image" src="images/mindsapp/mindsapp_title_logo.png" alt="The Click Society Title and Logo"/></div>' + 
-                '<p class="text-large text-light text-center">To be updated.</p>' + 
+                '</div>' + 
+                '<div class="spacer-large"></div>' + 
+                '<div id="portfolio-info-writeup" class="flex-column flex-between responsive">' + 
+                '<p class="text-large text-light text-center">Write-up to be updated.</p> ' + 
                 '</div>'
                 break;
             case "c2-veritas":
@@ -356,7 +378,10 @@ $(document).ready(function () {
                 '<p id="portfolio-info-date" class="text-large">Completion Date: Jun 2021</p></div>' + 
                 '<div class="portfolio-info-block-logo">' +  
                 '<img id="portfolio-info-main-image" src="images/veritas/veritas_title_logo.png" alt="Veritas Title and Logo"/></div>' + 
-                '<p class="text-large text-light text-center">To be updated.</p>' + 
+                '</div>' + 
+                '<div class="spacer-large"></div>' + 
+                '<div id="portfolio-info-writeup" class="flex-column flex-between responsive">' + 
+                '<p class="text-large text-light text-center">Write-up to be updated.</p> ' + 
                 '</div>'
                 break;
             case "c2-pohbear":
@@ -370,7 +395,10 @@ $(document).ready(function () {
                 '<p id="portfolio-info-date" class="text-large">Completion Date: Aug 2021</p></div>' + 
                 '<div class="portfolio-info-block-logo">' +  
                 '<img id="portfolio-info-main-image" src="images/pohbear/pohbear_title_logo.png" alt="Pohbear Title and Logo"/></div>' + 
-                '<p class="text-large text-light text-center">To be updated.</p>' + 
+                '</div>' + 
+                '<div class="spacer-large"></div>' + 
+                '<div id="portfolio-info-writeup" class="flex-column flex-between responsive">' + 
+                '<p class="text-large text-light text-center">Write-up to be updated.</p> ' + 
                 '</div>'
                 break;
         }

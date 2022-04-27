@@ -557,6 +557,14 @@ img.about-img {
         clip-path: polygon(0% 0%, 50% 50%, 100% 0%);
         transition: all 0.5s ease;
     }
+    .triangle-up {
+        margin-top: 5vw;
+        width: 8vw;
+        height: 8vw;
+        background: whitesmoke;
+        clip-path: polygon(0% 100%, 50% 50%, 100% 100%);
+        transition: all 0.5s ease;
+    }
     div.home-about-text {
         width:90%;
         margin-right: 0%;
