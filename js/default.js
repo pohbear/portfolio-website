@@ -264,37 +264,81 @@ $(document).ready(function () {
                 '<p class="text-small text-light text-center">Gotta take care of the family jewels</p></div></div>' + 
                 '<div class="spacer-large"></div>' + 
                 '<p class="text-large">Development</p>' + 
-                '<p class="text-medium">For development of the app, we used Android Studio, as we used it before in a mobile app development module. ' + 
+                '<p class="text-medium">We did our development on Android Studio, as we used it before in a mobile app development module. ' + 
                 'While it was familiar to us, we wanted to learn something new too, so each of us had a focus domain when it came to the app creation. More on that in a little bit.</p>' + 
                 '<div class="spacer"></div>' + 
-                '<p class="text-medium">For our computer vision model, we found about Teachable Machine from Google, ' + 
-                'a tool we can use to create an image-based machine learning model. ' + 
+                '<p class="text-medium">For our computer vision model, we used Teachable Machine from Google to create it. ' + 
                 'We each picked a piece of gym equipment, and then sourced for at least 50 images to train our model with. ' + 
-                'We ended up with a simple model that could detect 3 different pieces of gym equipment: A lat pulldown machine, a leg press, or a treadmill.</p>' + 
+                'The result was a simple model that could detect 3 different pieces of gym equipment: A lat pulldown machine, a leg press, or a treadmill. ' + 
+                'We exported the model as a Tensorflow Lite file, and added it into our Android app.</p>' + 
                 '<div class="spacer"></div>' + 
-                '<img class="portfolio-info-image" src="images/reptrack/reptrack_model_test.png"/>' + 
-                '<p class="text-small text-light text-center">Model detecting lat pulldown machine</p></div>' + 
-                '</div>'
-                break;
-            case "c1-clicksociety":
-                content = '<div id="portfolio-info-basic" class="flex-row flex-between">' + 
-                '<div class="portfolio-info-block-main">' +  
-                '<p id="portfolio-info-title" class="text-xlarge">Click Society</p>' + 
-                '<p id="portfolio-info-brief" class="text-medium text-light">E-Commerce Website</p>' + 
+                '<p class="text-medium">My main contributions to the app would be Fragments, handling the back-end functions, and the Tracker feature. ' + 
+                '<div class="spacer"></div>' + 
+                '<p class="text-medium">For Fragments, I had to learn on my own how it works, and how to implement it. ' + 
+                'I chose to implement Fragments as I felt that it made the entire navigation process a lot more intuitive, ' + 
+                'and I wanted to learn something new to challenge myself. ' + 
+                'Learning and implementing Fragments was very challenging, because we were already using Activities for our template. ' + 
+                'I also had to teach my fellow teammates how to use it, and implement their features as a Fragment. ' + 
+                'However, it paid off at the end and we were able to utilize Fragments within our app.</p>' + 
+                '<div class="spacer"></div>' + 
+                '<p class="text-medium">The backend was implemented using SQLite, which we could use for CRUD. ' + 
+                'With the limited time we had, we chose to use SQLite because we had learned about it before. ' + 
+                'The learning point for the backend was trying to host it online instead of locally. ' + 
+                'Sadly due to time constraints, we learned it but were not able to properly implement it.</p>' + 
+                '<div class="spacer"></div>' + 
+                '<p class="text-medium">Last but not least was the tracker feature, which was used to store and track the users exercise history. ' + 
+                'Utilizing nested Fragments, the tracker was built with CustomListViews with CustomAdapters so I could customise the layout and output for each list item. ' + 
+                'The user would have a target set for each exercise and the output for each entry would reflect whether they met their target. ' + 
+                'The challenge faced here was that I wanted to use ContextMenus and Dialogs to allow the user to edit and delete their workout entries, ' + 
+                'but I was not able to find out how to properly implement it. My workaround was to include buttons instead of ContextMenu.</p> ' + 
+                '<div class="spacer"></div>' + 
+                '<div class="flex-row flex-between">' + 
+                '<div class="portfolio-info-block-small">' + 
+                '<img class="portfolio-info-image" src="images/reptrack/reptrack_scanner.gif"/>' + 
+                '<p class="text-small text-light text-center">Scanning with camera in RepTrack</p></div>' + 
+                '<div class="portfolio-info-block-small">' + 
+                '<img class="portfolio-info-image" src="images/reptrack/reptrack_fragment.gif"/>' + 
+                '<p class="text-small text-light text-center">Fragments within RepTrack</p></div>' + 
+                '<div class="portfolio-info-block-small">' + 
+                '<img class="portfolio-info-image" src="images/reptrack/reptrack_tracker.gif"/>' + 
+                '<p class="text-small text-light text-center">Tracker with nested fragments</p></div></div>' + 
                 '<div class="spacer-large"></div>' + 
-                '<p id="portfolio-info-software" class="text-large">Software: Wordpress</p>' + 
-                '<div class="spacer-large"></div>' + 
-                '<p id="portfolio-info-language" class="text-large">Framework: WooCommerce</p>' + 
-                '<div class="spacer-large"></div>' + 
-                '<p id="portfolio-info-date" class="text-large">Completion Date: Feb 2022</p></div>' + 
-                '<div class="portfolio-info-block-logo flex-row flex-center text-center">' +  
-                '<img id="portfolio-info-main-image" src="images/clicksociety/clicksociety_title_logo.png" alt="The Click Society Title and Logo"/></div>' + 
+                '<p class="text-large">Final Thoughts</p>' + 
+                '<p class="text-medium">Through this project, I gained the experience of working in a team on a mostly self-managed project. ' + 
+                'It showed me how important the planning phase of a project is, as we had many struggles and changes between due to the lack of proper planning. ' + 
+                'Another key takeaway would be communication. When working on a project with others, it is easy to make mistakes like ' + 
+                'overwriting code or clashing names. We had to come up with standard sequence of actions when interacting with the code and GitHub, ' + 
+                'and also standardised naming conventions based on the various features.</p>' + 
                 '</div>' + 
-                '<div class="spacer-large"></div>' + 
-                '<div id="portfolio-info-writeup" class="flex-column flex-between responsive">' + 
-                '<p class="text-large text-light text-center">Write-up to be updated.</p> ' + 
                 '</div>'
                 break;
+            // case "c1-clicksociety":
+            //     content = '<div id="portfolio-info-basic" class="flex-row flex-between">' + 
+            //     '<div class="portfolio-info-block-main">' +  
+            //     '<p id="portfolio-info-title" class="text-xlarge">Click Society</p>' + 
+            //     '<p id="portfolio-info-brief" class="text-medium text-light">E-Commerce Website</p>' + 
+            //     '<div class="spacer-large"></div>' + 
+            //     '<p id="portfolio-info-software" class="text-large">Software: Wordpress</p>' + 
+            //     '<div class="spacer-large"></div>' + 
+            //     '<p id="portfolio-info-language" class="text-large">Framework: WooCommerce</p>' + 
+            //     '<div class="spacer-large"></div>' + 
+            //     '<p id="portfolio-info-date" class="text-large">Completion Date: Feb 2022</p></div>' + 
+            //     '<div class="portfolio-info-block-logo flex-row flex-center text-center">' +  
+            //     '<img id="portfolio-info-main-image" src="images/clicksociety/clicksociety_title_logo.png" alt="The Click Society Title and Logo"/></div>' + 
+            //     '</div>' + 
+            //     '<div class="spacer-large"></div>' + 
+            //     '<div id="portfolio-info-writeup" class="flex-column flex-between responsive">' + 
+            //     '<p class="text-large">Introduction</p>' + 
+            //     '<p class="text-medium">The Click Society is a e-commerce website that was created as a submission for a Front-End Web Development module.</p>' + 
+            //     '<div class="spacer-large"></div>' + 
+            //     '<p class="text-large">Development</p>' + 
+            //     '<p class="text-medium">The Click Society was developed with WordPress and WooCommerce for the main content, ' + 
+            //     'with ContactForm7 and Flamingo to support contact form submissions.</p>' + 
+            //     '<div class="spacer"></div>' + 
+            //     '<p class="text-medium">The design is focused on black and white to be minimalistic and sleek, ' + 
+            //     'so that the focus can be put on the products on the platform.</p>' + 
+            //     '</div>'
+            //     break;
             case "c1-quizzy":
                 content = '<div id="portfolio-info-basic" class="flex-row flex-between">' + 
                 '<div class="portfolio-info-block-main">' +  
@@ -305,13 +349,47 @@ $(document).ready(function () {
                 '<div class="spacer-large"></div>' + 
                 '<p id="portfolio-info-language" class="text-large">Language: HTML, CSS, JavaScript</p>' + 
                 '<div class="spacer-large"></div>' + 
-                '<p id="portfolio-info-date" class="text-large">Completion Date: Jan 2022</p></div>' + 
+                '<p id="portfolio-info-date" class="text-large">Completion Date: Jan 2022</p>' + 
+                '<div class="spacer-large"></div>' + 
+                '<p id="portfolio-info-website" class="text-large"><a href="https://rpkennethpoh.github.io/quizzy/" target="_blank">Website Link</a></p></div>' + 
                 '<div class="portfolio-info-block-logo">' +  
                 '<img id="portfolio-info-main-image" src="images/quizzy/quizzy_title_logo.png" alt="Quizzy Title and Logo"/></div>' + 
                 '</div>' + 
                 '<div class="spacer-large"></div>' + 
                 '<div id="portfolio-info-writeup" class="flex-column flex-between responsive">' + 
-                '<p class="text-large text-light text-center">Write-up to be updated.</p> ' + 
+                '<p class="text-large">Introduction</p>' + 
+                '<p class="text-medium">Quizzy is a online quiz website for children to test their knowledge on vehicle parts and anatomies.</p> ' + 
+                '<div class="spacer-large"></div>' + 
+                '<p class="text-large">Design</p>' + 
+                '<p class="text-medium">Since this website was built for children, I built the elements using colours to draw focus. ' + 
+                'For the main colours, I went with a monochromatic blue to evoke a sense of calm and avoid it from being too jarring. ' + 
+                'For the logo, I went with a complementary between purple and green. The inspiration for this was honestly in the spur of the moment, ' + 
+                'as I was thinking about the Batman villains Riddler and Joker. I thought it was appropriate since this website is about quizzes. ' + 
+                'Finally, the main quiz buttons and SVGs were all drawn to provide more context by reflecting the environment of each vehicle.</p>' + 
+                '<div class="spacer"></div>' + 
+                '<img class="portfolio-info-image" src="images/quizzy/quizzy_screencap.png"/>' + 
+                '<p class="text-small text-light text-center">Screencap of Quizzy\'s welcome page</p>' + 
+                '<div class="spacer-large"></div>' + 
+                '<p class="text-large">Development</p>' + 
+                '<p class="text-medium">This website was built using HTML, CSS and JavaScript. ' + 
+                'The libraries used in this project were anime.js for animations, fullpage.js and Bootstrap for the layout, ' + 
+                'and jQuerys quiz.js for the actual quiz.</p> ' + 
+                '<div class="spacer"></div>' + 
+                '<p class="text-medium">The main challenge I faced was trying to limit the access to different quizzes based on progression. ' + 
+                'The idea was for the player to complete Quiz 1 before they could access Quiz 2, and so on. ' + 
+                'I had the general idea of using boolean variables to set flags once a user completes a quiz level, ' + 
+                'but I had some trouble trying to implement it. After some time, I managed to get it to work.</p> ' + 
+                '<div class="spacer-large"></div>' + 
+                '<p class="text-large">Final Thoughts</p>' + 
+                '<p class="text-medium">Through this project, I experienced building a website using multiple JavaScript libraries together. ' + 
+                'The website is not complete, and it only has functionality for one quiz. ' + 
+                'I tried to create the second quiz using the jQuery quiz.js, but it only allows for one quiz to be created at any time. ' + 
+                'My idea of a workaround would probably be to create the quizzes manually instead of relying on quiz.js. ' + 
+                'Figuring that out would probably allow me to complete the whole website. I\'ll try to experiment around during my free time.</p>' + 
+                '<div class="spacer"></div>' + 
+                '<p class="text-medium">In case you missed it, ' + 
+                'you can <a href="https://rpkennethpoh.github.io/quizzy/" target="_blank">click here</a> ' + 
+                'to visit the Quizzy website!</p> ' + 
                 '</div>'
                 break;
             case "c2-portfolioapp":
@@ -320,15 +398,26 @@ $(document).ready(function () {
                 '<p id="portfolio-info-title" class="text-xlarge">My Portfolio App</p>' + 
                 '<p id="portfolio-info-brief" class="text-medium text-light">Portfolio App Design</p>' + 
                 '<div class="spacer-large"></div>' + 
-                '<p id="portfolio-info-software" class="text-large">Software: Adobe XD</p>' + 
+                '<p id="portfolio-info-software" class="text-large">Software: Adobe Illustrator, Adobe XD</p>' + 
                 '<div class="spacer-large"></div>' + 
-                '<p id="portfolio-info-date" class="text-large">Completion Date: Aug 2021</p></div>' + 
+                '<p id="portfolio-info-date" class="text-large">Completion Date: Aug 2021</p>' + 
+                '<div class="spacer-large"></div>' + 
+                '<p id="portfolio-info-website" class="text-large"><a href="https://xd.adobe.com/view/adacb5c8-3be7-4cb2-829c-77151805ef65-f8ff/" target="_blank">XD Link</a></p></div>' + 
                 '<div class="portfolio-info-block-logo">' +  
                 '<img id="portfolio-info-main-image" src="images/portfolioapp/portfolioapp_title_logo.png" alt="Portfolio App Title and Logo"/></div>' + 
                 '</div>' + 
                 '<div class="spacer-large"></div>' + 
                 '<div id="portfolio-info-writeup" class="flex-column flex-between responsive">' + 
-                '<p class="text-large text-light text-center">Write-up to be updated.</p> ' + 
+                '<p class="text-large">Introduction</p>' + 
+                '<p class="text-medium">My Portfolio App is an Adobe XD Prototype of a mobile portfolio app ' + 
+                'created to promote myself and showcase my projects.</p> ' + 
+                '<div class="spacer-large"></div>' + 
+                '<p class="text-large">Design</p>' + 
+                '<p class="text-medium">Since this website was built for children, I built the elements using colours to draw focus. ' + 
+                'For the main colours, I went with a monochromatic blue to evoke a sense of calm and avoid it from being too jarring. ' + 
+                'For the logo, I went with a complementary between purple and green. The inspiration for this was honestly in the spur of the moment, ' + 
+                'as I was thinking about the Batman villains Riddler and Joker. I thought it was appropriate since this website is about quizzes. ' + 
+                'Finally, the main quiz buttons and SVGs were all drawn to provide more context by reflecting the environment of each vehicle.</p>' + 
                 '</div>'
                 break;
             case "c1-cagapp":
@@ -378,23 +467,6 @@ $(document).ready(function () {
                 '<p id="portfolio-info-date" class="text-large">Completion Date: Jun 2021</p></div>' + 
                 '<div class="portfolio-info-block-logo">' +  
                 '<img id="portfolio-info-main-image" src="images/veritas/veritas_title_logo.png" alt="Veritas Title and Logo"/></div>' + 
-                '</div>' + 
-                '<div class="spacer-large"></div>' + 
-                '<div id="portfolio-info-writeup" class="flex-column flex-between responsive">' + 
-                '<p class="text-large text-light text-center">Write-up to be updated.</p> ' + 
-                '</div>'
-                break;
-            case "c2-pohbear":
-                content = '<div id="portfolio-info-basic" class="flex-row flex-between">' + 
-                '<div class="portfolio-info-block-main">' +  
-                '<p id="portfolio-info-title" class="text-xlarge">Pohbear Logo</p>' + 
-                '<p id="portfolio-info-brief" class="text-medium text-light">Personal Logo Design</p>' + 
-                '<div class="spacer-large"></div>' + 
-                '<p id="portfolio-info-software" class="text-large">Software: Adobe Illustrator</p>' + 
-                '<div class="spacer-large"></div>' + 
-                '<p id="portfolio-info-date" class="text-large">Completion Date: Aug 2021</p></div>' + 
-                '<div class="portfolio-info-block-logo">' +  
-                '<img id="portfolio-info-main-image" src="images/pohbear/pohbear_title_logo.png" alt="Pohbear Title and Logo"/></div>' + 
                 '</div>' + 
                 '<div class="spacer-large"></div>' + 
                 '<div id="portfolio-info-writeup" class="flex-column flex-between responsive">' + 

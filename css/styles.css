@@ -642,4 +642,44 @@ img.about-img {
     .cursor {
         display:none;
     }
+    .portfolio-info-block {
+        width: 100%;
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+    .portfolio-info-block-main {
+        width: 100%;
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+    .portfolio-info-block-logo {
+        width: 100%;
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+    .portfolio-info-block-small {
+        width: 100%;
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+    .portfolio-info-block-large {
+        width: 100%;
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
 }
