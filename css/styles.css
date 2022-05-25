@@ -142,6 +142,9 @@ footer {
 .text-light {
     color: rgba(245, 245, 245, 0.7);
 }
+.text-bold {
+    font-weight:bold;
+}
 .section-header {
     margin-bottom: 30px;
 }

@@ -122,7 +122,7 @@ $(document).ready(function () {
                 '<p id="portfolio-info-language" class="text-large">Language: C#</p>' + 
                 '<div class="spacer-large"></div>' + 
                 '<p id="portfolio-info-date" class="text-large">Completion Date: Feb 2022</p></div>' + 
-                '<div class="portfolio-info-block-logo flex-row flex-center text-center">' +  
+                '<div class="portfolio-info-block-logo responsive-hide">' +  
                 '<img id="portfolio-info-main-image" src="images/penumbra/penumbra_title_logo.png" alt="Penumbra Title and Logo"/></div>' + 
                 '</div>' + 
                 '<div class="spacer-large"></div>' + 
@@ -236,7 +236,7 @@ $(document).ready(function () {
                 '<p id="portfolio-info-language" class="text-large">Language: Java, php, SQL</p>' + 
                 '<div class="spacer-large"></div>' + 
                 '<p id="portfolio-info-date" class="text-large">Completion Date: Feb 2022</p></div>' + 
-                '<div class="portfolio-info-block-logo">' +  
+                '<div class="portfolio-info-block-logo responsive-hide">' +  
                 '<img id="portfolio-info-main-image" src="images/reptrack/reptrack_title_logo.png" alt="RepTrack Title and Logo"/></div>' + 
                 '</div>' + 
                 '<div class="spacer-large"></div>' + 
@@ -352,7 +352,7 @@ $(document).ready(function () {
                 '<p id="portfolio-info-date" class="text-large">Completion Date: Jan 2022</p>' + 
                 '<div class="spacer-large"></div>' + 
                 '<p id="portfolio-info-website" class="text-large"><a href="https://rpkennethpoh.github.io/quizzy/" target="_blank">Website Link</a></p></div>' + 
-                '<div class="portfolio-info-block-logo">' +  
+                '<div class="portfolio-info-block-logo responsive-hide">' +  
                 '<img id="portfolio-info-main-image" src="images/quizzy/quizzy_title_logo.png" alt="Quizzy Title and Logo"/></div>' + 
                 '</div>' + 
                 '<div class="spacer-large"></div>' + 
@@ -403,7 +403,7 @@ $(document).ready(function () {
                 '<p id="portfolio-info-date" class="text-large">Completion Date: Aug 2021</p>' + 
                 '<div class="spacer-large"></div>' + 
                 '<p id="portfolio-info-website" class="text-large"><a href="https://xd.adobe.com/view/adacb5c8-3be7-4cb2-829c-77151805ef65-f8ff/" target="_blank">XD Link</a></p></div>' + 
-                '<div class="portfolio-info-block-logo">' +  
+                '<div class="portfolio-info-block-logo responsive-hide">' +  
                 '<img id="portfolio-info-main-image" src="images/portfolioapp/portfolioapp_title_logo.png" alt="Portfolio App Title and Logo"/></div>' + 
                 '</div>' + 
                 '<div class="spacer-large"></div>' + 
@@ -413,11 +413,44 @@ $(document).ready(function () {
                 'created to promote myself and showcase my projects.</p> ' + 
                 '<div class="spacer-large"></div>' + 
                 '<p class="text-large">Design</p>' + 
-                '<p class="text-medium">Since this website was built for children, I built the elements using colours to draw focus. ' + 
-                'For the main colours, I went with a monochromatic blue to evoke a sense of calm and avoid it from being too jarring. ' + 
-                'For the logo, I went with a complementary between purple and green. The inspiration for this was honestly in the spur of the moment, ' + 
-                'as I was thinking about the Batman villains Riddler and Joker. I thought it was appropriate since this website is about quizzes. ' + 
-                'Finally, the main quiz buttons and SVGs were all drawn to provide more context by reflecting the environment of each vehicle.</p>' + 
+                '<div class="spacer"></div>' + 
+                '<p class="text-medium text-bold">Logo</p> ' + 
+                '<p class="text-medium">I went through a few different variations and iterations when trying to design a personal logo. ' + 
+                'I wanted something that could represent me well, but still look professional. ' + 
+                'I tried to center my ideas around the moniker of "Pohbear", which was my nickname since secondary school. ' + 
+                'Out of the different variations, I decided to go with the bear made with geometric shapes since I thought it fit my needs the best.</p>' + 
+                '<div class="spacer"></div>' + 
+                '<img class="portfolio-info-image" src="images/portfolioapp/portfolioapp_logo_design.png"/>' + 
+                '<p class="text-small text-light text-center">Pohbear logo design variations</p>' + 
+                '<div class="spacer"></div>' + 
+                '<p class="text-medium text-bold">App</p> ' + 
+                '<p class="text-medium">The overall aesthetic that I was trying to achieve was clean, ' + 
+                'but I wanted to include some flair to grab people\'s attention. ' + 
+                'I decided that the clean aesthetic would be dependent on the overall layout design, ' + 
+                'while the flair from the animations and transitions would complement it.</p>' +
+                '<div class="spacer"></div>' + 
+                '<p class="text-medium">Since this app was meant to be representative of me, ' + 
+                'I went with an analogous colour scheme of blues and greens, which are my favourite colours.</p>' +
+                '<div class="spacer"></div>' + 
+                '<img class="portfolio-info-image" src="images/portfolioapp/portfolioapp_colours.png"/>' + 
+                '<p class="text-small text-light text-center">Colour scheme for the app</p>' + 
+                '<div class="spacer"></div>' + 
+                '<p class="text-medium">I would say that the main design features of this portfolio app are the navigation and the about page. ' + 
+                'For the navigation, I wanted it to be more unique since transitioning between pages would be one of the key interactions done by a user. ' + 
+                'I decided to go with a rotating circular design as opposed to generic buttons or tabs at the bottom of the page. ' + 
+                'As for the about page, I wanted to properly represent the duality of doing both design and development, ' + 
+                'so I implemented two buttons beside my name in the page, and the contents would change based on the button pressed.</p>' + 
+                '<div class="spacer-large"></div>' + 
+                '<p class="text-large">Final Thoughts</p>' + 
+                '<p class="text-medium">This was definitely a learning experience for me, especially since I tried to apply some unconventional ' +  
+                'design choices like changing the navigation and trying to showcase the sense of duality. ' + 
+                'The prototyping for those were tough and despite not being amazing or perfect, I am content with the way it turned out. ' + 
+                'Also, while creating this app, it dawned on me as to how bad I am at managing my layers and artboards. ' + 
+                'I should probably work on improving that haha. </p> ' + 
+                '<div class="spacer"></div>' + 
+                '<p class="text-medium">In case you missed it, ' + 
+                'you can <a href="https://xd.adobe.com/view/adacb5c8-3be7-4cb2-829c-77151805ef65-f8ff/" target="_blank">click here</a> ' + 
+                'to visit view the XD Prototype!</p> ' + 
                 '</div>'
                 break;
             case "c1-cagapp":
