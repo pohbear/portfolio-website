@@ -361,11 +361,19 @@ $(document).ready(function () {
                 '<p class="text-medium">Quizzy is a online quiz website for children to test their knowledge on vehicle parts and anatomies.</p> ' + 
                 '<div class="spacer-large"></div>' + 
                 '<p class="text-large">Design</p>' + 
-                '<p class="text-medium">Since this website was built for children, I built the elements using colours to draw focus. ' + 
+                '<p class="text-medium">Since this website was built for children, I tried to use a variety of colours to increase the appeal. ' + 
+                'Overall, I wanted to go for pastel colours to keep the pages mild. ' + 
                 'For the main colours, I went with a monochromatic blue to evoke a sense of calm and avoid it from being too jarring. ' + 
-                'For the logo, I went with a complementary between purple and green. The inspiration for this was honestly in the spur of the moment, ' + 
-                'as I was thinking about the Batman villains Riddler and Joker. I thought it was appropriate since this website is about quizzes. ' + 
-                'Finally, the main quiz buttons and SVGs were all drawn to provide more context by reflecting the environment of each vehicle.</p>' + 
+                'For the logo, I went with a complementary between purple and green. ' + 
+                'Both the design and colour inspiration for this was honestly in the spur of the moment, ' + 
+                'as I was thinking about the Batman villains Riddler and Joker. ' + 
+                'I thought it was appropriate since the website was about quizzes, so I just went with it.</p> ' + 
+                '<div class="spacer"></div>' + 
+                '<p class="text-medium">The fonts used are Mochiy Pop P One and Poppins. ' +
+                'Mochiy Pop P One is a decorative and cute font to fit the demographic, while Poppins would help the page maintain it\'s clean aesthetic.</p> ' +  
+                '<div class="spacer"></div>' + 
+                '<p class="text-medium">The vehicles and backgrounds for the buttons were drawn in Illustrator. ' + 
+                'The idea was for them to provide more context by reflecting the environment of each vehicle.</p>' + 
                 '<div class="spacer"></div>' + 
                 '<img class="portfolio-info-image" src="images/quizzy/quizzy_screencap.png"/>' + 
                 '<p class="text-small text-light text-center">Screencap of Quizzy\'s welcome page</p>' + 
@@ -430,14 +438,22 @@ $(document).ready(function () {
                 'while the flair from the animations and transitions would complement it.</p>' +
                 '<div class="spacer"></div>' + 
                 '<p class="text-medium">Since this app was meant to be representative of me, ' + 
-                'I went with an analogous colour scheme of blues and greens, which are my favourite colours.</p>' +
+                'I went with an analogous colour scheme of blues and greens, which are my favourite colours. ' + 
+                'I also wanted to make sure my logo could be seen, ' + 
+                'but I did not want it to take up space especially when there is so little of it on a mobile screen. ' + 
+                'My workaround was to include it in the background, with the opacity turned down so it does not distract the user.</p>' +
                 '<div class="spacer"></div>' + 
                 '<img class="portfolio-info-image" src="images/portfolioapp/portfolioapp_colours.png"/>' + 
                 '<p class="text-small text-light text-center">Colour scheme for the app</p>' + 
                 '<div class="spacer"></div>' + 
+                '<p class="text-medium">The fonts used were Segoe UI and Lato. I prefer using sans-serif fonts, ' + 
+                'because I feel they help a page look friendly, but still maintains a sense of cleanliness or professionalism.' + 
+                '<div class="spacer"></div>' + 
                 '<p class="text-medium">I would say that the main design features of this portfolio app are the navigation and the about page. ' + 
                 'For the navigation, I wanted it to be more unique since transitioning between pages would be one of the key interactions done by a user. ' + 
                 'I decided to go with a rotating circular design as opposed to generic buttons or tabs at the bottom of the page. ' + 
+                'I also didn\'t want the text at the navigation area to just fade in and out, ' + 
+                'so I designed it to look like the text was rearranging itself instead.' + 
                 'As for the about page, I wanted to properly represent the duality of doing both design and development, ' + 
                 'so I implemented two buttons beside my name in the page, and the contents would change based on the button pressed.</p>' + 
                 '<div class="spacer-large"></div>' + 
@@ -464,12 +480,57 @@ $(document).ready(function () {
                 '<p id="portfolio-info-language" class="text-large">Language: Java</p>' + 
                 '<div class="spacer-large"></div>' + 
                 '<p id="portfolio-info-date" class="text-large">Completion Date: Aug 2021</p></div>' + 
-                '<div class="portfolio-info-block-logo">' +  
-                '<img id="portfolio-info-main-image" src="images/cagapp/cagapp_title_logo.png" alt="CAG App Title and Logo"/></div>' + 
+                '<div class="portfolio-info-block-logo responsive-hide">' +  
+                '<img id="portfolio-info-main-image" src="images/cagcalc/cagcalc_logo.png" alt="CAG App Title and Logo"/></div>' + 
                 '</div>' + 
                 '<div class="spacer-large"></div>' + 
                 '<div id="portfolio-info-writeup" class="flex-column flex-between responsive">' + 
-                '<p class="text-large text-light text-center">Write-up to be updated.</p> ' + 
+                '<p class="text-large">Introduction</p>' + 
+                '<p class="text-medium">CAG Tracker is an Android application created to help students from Republic Polytechnic ' + 
+                'calculate and track their Continuous Assessment Grade (CAG) scores.</p> ' + 
+                '<div class="spacer-large"></div>' + 
+                '<p class="text-large">Design</p>' + 
+                '<p class="text-medium">This app was created mostly with function in mind, as opposed to form. ' + 
+                'The basic design considerations implemented were the colours of Republic Polytechnic, which are green and black. ' + 
+                'I also tried to make sure the text and buttons were large enough to see and interact with.</p> ' + 
+                '<div class="spacer-large"></div>' + 
+                '<p class="text-large">Development</p>' + 
+                '<p class="text-medium">The app was created in Android Studio. ' + 
+                'The features/techniques implemented are Activities, ArrayLists with CustomAdapters, ContextMenus, Dialogs, and SQLite' + 
+                'The general gist of this application is it allows users to store modules and their corresponding CAGs locally through SQLite. ' + 
+                'This way, the application can run offline and they are able to reference their grades whenever they want to. ' + 
+                'They can then manage their grades and modules through basic CRUD functions.</p>' +
+                '<div class="spacer"></div>' + 
+                '<p class="text-medium">Each part of the app exists within its own Activity, ' + 
+                'so there is an Activity for the main page, modules, CAGs, and calculations.</p>' + 
+                '<div class="spacer"></div>' + 
+                '<p class="text-medium">The module Activity and the CAG Activity are very similar. ' + 
+                'They fetch the entries from each corresponding table in the database, and displays it as a ListView. ' + 
+                'The user can add entries by pressing a button, which will bring up a Dialog. ' + 
+                'For existing entries, they can edit or delete them with a long press on each entry, which will bring up a ContextMenu.</p>' + 
+                '<div class="spacer"></div>' + 
+                '<p class="text-medium">In the calculation Activity, the user will pick the module they want to calculate for, ' + 
+                'enter the scores they got for their CAG, and the app will used the percentages defined by the module to calculate their score. ' + 
+                'The score is presented through a Dialog, and the user can choose to "Save" or "Cancel" their calculation. </p>' + 
+                '<div class="spacer"></div>' + 
+                '<div class="flex-row flex-between">' + 
+                '<div class="portfolio-info-block-small">' + 
+                '<img class="portfolio-info-image" src="images/cagcalc/cagcalc_add_module.gif"/>' + 
+                '<p class="text-small text-light text-center">Adding a module</p></div>' + 
+                '<div class="portfolio-info-block-small">' + 
+                '<img class="portfolio-info-image" src="images/cagcalc/cagcalc_calculate.gif"/>' + 
+                '<p class="text-small text-light text-center">Calculating and viewing CAG entries</p></div>' + 
+                '<div class="portfolio-info-block-small">' + 
+                '<img class="portfolio-info-image" src="images/cagcalc/cagcalc_remove_cag.gif"/>' + 
+                '<p class="text-small text-light text-center">Removing CAG entry</p></div></div>' + 
+                '<div class="spacer-large"></div>' + 
+                '<p class="text-large">Final Thoughts</p>' + 
+                '<p class="text-medium">This was an app that I built for practical use, as opposed to just building for the sake of it. ' +  
+                'I created the app right after learning about Dialogs, ' + 
+                'and this helped me to understand how useful Dialogs are in streamlining and providing feedback during a process. ' + 
+                'Creating this app also showed me how important planning was. Initially, I built it without much planning, ' + 
+                'thinking that it would not be that difficult. I struggled when it came to setting up the database and the functions, ' + 
+                'and I ended up having to add and edit a fair amount of code, which lengthened the process.</p> ' + 
                 '</div>'
                 break;
             case "c2-mindsapp":
@@ -480,13 +541,70 @@ $(document).ready(function () {
                 '<div class="spacer-large"></div>' + 
                 '<p id="portfolio-info-software" class="text-large">Software: Adobe XD</p>' + 
                 '<div class="spacer-large"></div>' + 
-                '<p id="portfolio-info-date" class="text-large">Completion Date: Jul 2021</p></div>' + 
-                '<div class="portfolio-info-block-logo">' +  
-                '<img id="portfolio-info-main-image" src="images/mindsapp/mindsapp_title_logo.png" alt="The Click Society Title and Logo"/></div>' + 
+                '<p id="portfolio-info-date" class="text-large">Completion Date: Jul 2021</p>' + 
+                '<div class="spacer-large"></div>' + 
+                '<p id="portfolio-info-website" class="text-large"><a href="https://xd.adobe.com/view/f75cd724-5958-44b3-903f-a57e5509e60e-a20f/" target="_blank">XD Link</a></p></div>' + 
+                '<div class="portfolio-info-block-logo responsive-hide">' +  
+                '<img id="portfolio-info-main-image" src="images/mindsapp/mindsapp_title_logo.png" alt="Minds App Title and Logo"/></div>' + 
                 '</div>' + 
                 '<div class="spacer-large"></div>' + 
                 '<div id="portfolio-info-writeup" class="flex-column flex-between responsive">' + 
-                '<p class="text-large text-light text-center">Write-up to be updated.</p> ' + 
+                '<p class="text-large">Introduction</p>' + 
+                '<p class="text-medium">This XD Prototype was created as an app designed to cater towards children with special needs ' + 
+                'or learning disabilities. The app is suppose to help these children learn more about their emotions ' + 
+                'through the use of helpful keywords, visual cues, and colours. Doing so will allow them to express themselves more accurately, ' + 
+                'and also understand other people better.</p> ' + 
+                '<div class="spacer-large"></div>' + 
+                '<p class="text-large">Design</p>' + 
+                '<div class="spacer"></div>' + 
+                '<div class="flex-row flex-between">' + 
+                '<div class="portfolio-info-block-large">' + 
+                '<p class="text-medium text-bold">Logo/Mascot</p> ' + 
+                '<p class="text-medium">When I was trying to come up with a mascot or logo to represent the application, ' + 
+                'I had to try to put myself in the shoes of a child with a learning disability. I wanted to design something simple, ' + 
+                'because having too much could result in a sensory overload. I also wanted to make it something that looked appealing and approachable. ' + 
+                'I was inspired by my interests at the time, a virtual Youtuber named Tsunomaki Watame. ' + 
+                'Her character design was based on sheeps, and she has a rather soothing voice and personality. ' + 
+                'I quite liked the idea of using a sheep, since they are usually seen as calm and affectionate. ' + 
+                'The mascot (both the art and the name) were heavily inspired by her. </p></div> ' + 
+                '<div class="portfolio-info-block-small">' +
+                '<img class="portfolio-info-image" src="images/mindsapp/mindsapp_logo.png"/>' + 
+                '<p class="text-small text-light text-center">Say hi to Wata the sheep</p></div>' + 
+                '</div>' + 
+                '<div class="spacer"></div>' + 
+                '<p class="text-medium text-bold">App</p> ' + 
+                '<p class="text-medium">Designing the app with children with learning disabilities in mind, ' + 
+                'I wanted to make sure the elements within the app were all clear and distinct. ' + 
+                'To achieve this, I went with a grid-like positioning for the layout to ensure there was structure to it. ' + 
+                'For the colours, I wanted to try to impart various meanings to them. </p>' + 
+                '<ul class="text-medium"><li>The background is light blue to evoke an overall sense of calm</li> ' + 
+                '<li>The buttons on the main page are different colours to distinguish between three different activities</li> ' + 
+                '<li>The buttons on the "Learn" page are reflective of each emotion they can learn about</li> ' + 
+                '<li>The buttons on the "Practice" page are varying shades of green, to reflect the difficulty and mirror the green "Practice" button on the main page</li></ul> ' + 
+                '<div class="spacer"></div>' + 
+                '<p class="text-medium">Whenever Wata is giving some advice or instruction, I tried to draw attention to it by ' + 
+                'dimming the background, and making sure Wata and the text were in the center. ' + 
+                'I also tried to make sure the instructions were simple and clear so that children could better understand it. </p>' +
+                '<div class="spacer"></div>' + 
+                '<p class="text-medium">The app was designed to include kinesthetic, auditory, and haptic feedback/functions to further improve the learning experience.</p>' + 
+                '<ul class="text-medium"><li>Kinesthetics functions are achieved with the phone\'s camera and user proximity. ' + 
+                'The children can take a photo an individual, and a computer vision model trained to read facial features and expressions ' + 
+                'will try to determine which expressions/feelings are present, and present it to the user.</li>' +
+                '<li>Auditory feedback is achieved using alerts and notifications, and error tones. ' + 
+                'The audio would have to be mild to ensure there is no sensory overload, but clear enough to provide proper feedback. ' + 
+                'A short ding that fades can indicate a right answer, while two short tones can indicate a wrong answer.</li>' +
+                '<li>Haptic feedback is achieved through the use of vibrations. Whenever the user interacts with an interactable, ' + 
+                'the phone will vibrate slightly to indicate that an action is being carried out.</li></ul> ' + 
+                '<div class="spacer-large"></div>' + 
+                '<p class="text-large">Final Thoughts</p>' + 
+                '<p class="text-medium">Designing an app catered towards individuals with disabilities requires extreme effort and caution. ' +  
+                'There were many points where I thought to include something into the app, ' + 
+                'only to realise that was based on my own assumptions of what I would like in an app, instead of what would be useful for my target audience. ' + 
+                'Through creating this app, I learned about various disabilities and how I can design products with inclusivity in mind.</p> ' + 
+                '<div class="spacer"></div>' + 
+                '<p class="text-medium">In case you missed it, ' + 
+                'you can <a href="https://xd.adobe.com/view/f75cd724-5958-44b3-903f-a57e5509e60e-a20f/" target="_blank">click here</a> ' + 
+                'to visit view the XD Prototype!</p> ' + 
                 '</div>'
                 break;
             case "c2-veritas":
@@ -497,13 +615,51 @@ $(document).ready(function () {
                 '<div class="spacer-large"></div>' + 
                 '<p id="portfolio-info-software" class="text-large">Software: Adobe XD</p>' + 
                 '<div class="spacer-large"></div>' + 
-                '<p id="portfolio-info-date" class="text-large">Completion Date: Jun 2021</p></div>' + 
-                '<div class="portfolio-info-block-logo">' +  
+                '<p id="portfolio-info-date" class="text-large">Completion Date: Jun 2021</p>' + 
+                '<div class="spacer-large"></div>' + 
+                '<p id="portfolio-info-website" class="text-large"><a href="https://xd.adobe.com/view/9f7e7fd5-ce96-438a-a0b2-c0d878a2a76d-ca2d/" target="_blank">XD Link</a></p></div>' + 
+                '<div class="portfolio-info-block-logo responsive-hide">' +  
                 '<img id="portfolio-info-main-image" src="images/veritas/veritas_title_logo.png" alt="Veritas Title and Logo"/></div>' + 
                 '</div>' + 
                 '<div class="spacer-large"></div>' + 
                 '<div id="portfolio-info-writeup" class="flex-column flex-between responsive">' + 
-                '<p class="text-large text-light text-center">Write-up to be updated.</p> ' + 
+                '<p class="text-large">Introduction</p>' + 
+                '<p class="text-medium">This XD Prototype is for Veritas, an imaginary company that sells Virtual Reality equipment. ' + 
+                'This was created as a submission for class, and is one of my first design prototypes.</p>' + 
+                '<div class="spacer-large"></div>' + 
+                '<p class="text-large">Design</p>' + 
+                '<div class="spacer"></div>' + 
+                '<p class="text-medium text-bold">Logo</p> ' + 
+                '<p class="text-medium">I designed my logo around the business, which is to sell VR equipment. ' + 
+                'The logo is a combination of an eye and a camera shutter. ' + 
+                'This represents the combination of human vision and technology to provide a realistic experience. ' + 
+                'The light blue iris is suppose to signify the user \'opening their eyes\', and being ushered into a new world.</p> ' + 
+                '<div class="spacer"></div>' + 
+                '<p class="text-medium text-bold">Name</p> ' + 
+                '<p class="text-medium">The name Veritas is Latin for truth or reality. The company\'s vision is "The leaders of virtual reality", ' + 
+                'and the tagline is "Capturing reality", which ties in to the Veritas logo.</p>' +
+                '<div class="spacer"></div>' + 
+                '<p class="text-medium text-bold">Colour</p> ' + 
+                '<p class="text-medium">The website and logo use a monochromatic blue colour scheme, from a pastel blue to black. ' +
+                'The lighter blue hues are suppose to impart a sense of calm and serenity, while being associated with technology. ' + 
+                'The darker blues and black are used to symbolise sophistication and simplicity.</p>' +
+                '<div class="spacer"></div>' + 
+                '<img class="portfolio-info-image" src="images/veritas/veritas_colour_scheme.png"/>' + 
+                '<p class="text-small text-light text-center">Veritas design colour scheme</p>' + 
+                '<div class="spacer"></div>' + 
+                '<p class="text-medium text-bold">Layout</p> ' + 
+                '<p class="text-medium">Since the overall design theme is meant to be sophisticated and simple, ' +
+                'the website layout is based on a grid. Each key element, product, or block is properly segmented to ensure clarity.' + 
+                'The darker blues and black are used to symbolise sophistication and simplicity.</p>' +
+                '<div class="spacer-large"></div>' + 
+                '<p class="text-large">Final Thoughts</p>' + 
+                '<p class="text-medium">Considering how this was my first experience designing a website with XD and creating a prototype, ' + 
+                'I am glad with the results. Although there is no "Wow Factor" to it, I feel like I did a decent job trying to deliver ' + 
+                'a design that is simple and sophisticated.</p> ' + 
+                '<div class="spacer"></div>' + 
+                '<p class="text-medium">In case you missed it, ' + 
+                'you can <a href="https://xd.adobe.com/view/9f7e7fd5-ce96-438a-a0b2-c0d878a2a76d-ca2d/" target="_blank">click here</a> ' + 
+                'to visit view the XD Prototype!</p> ' + 
                 '</div>'
                 break;
         }
