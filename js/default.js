@@ -109,6 +109,7 @@ $(document).ready(function () {
     $(".portfolio-show").click(function () {
         var pf_id = this.id;
         console.log(pf_id);
+        $("#portfolio-info-details").fadeOut(300);
         var content = "";
         switch(pf_id) {
             case "c1-penumbra":
@@ -663,7 +664,10 @@ $(document).ready(function () {
                 '</div>'
                 break;
         }
-        $("#portfolio-info-details").html(content);
+        setTimeout(function () {
+            $("#portfolio-info-details").html(content);
+        }, 300);
+        $("#portfolio-info-details").fadeIn(300);
         var goto = document.getElementById("portfolio-info-details");
         goto.scrollIntoView();
     });
