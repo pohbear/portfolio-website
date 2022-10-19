@@ -265,11 +265,13 @@ svg.main-logo {
     color: rgba(0, 186, 219,1);
 }
 div.home-about-text {
-    width:50%;
+    width:45%;
     margin-right:10%;
+    text-align: justify;
+    text-justify: inter-word;
 }
 div.home-about-img {
-    width:40%;
+    width:45%;
 }
 img.home-about {
     transition: all 0.5s ease;
@@ -340,14 +342,14 @@ article.home-portfolio-item a:hover {
     height:20%;
 }
 .about-img {
-    width: 40%;
+    width: 45%;
     margin-right:10%;
 }
 img.about-img {
     width: 100%;
 }
 .about-text {
-    width: 50%;
+    width: 45%;
 }
 .skills-bar {
     width:100%;
@@ -380,6 +382,9 @@ img.about-img {
 }
 .skills-text-des {
     text-align:end;
+}
+.about-img-block-small {
+    width: 33%;
 }
 
 /* Contact */
